@@ -2880,7 +2880,7 @@ textarea:focus {
     }
    
 }
-@media (max-width: 820px){
+@media (max-width: 360px){
     .hero-title {
         border-radius: 35px;
         position: relative;
