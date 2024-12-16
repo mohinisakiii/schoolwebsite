@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bwd.css">
+    <script>
+        function passvalues() {
+            var firstname = document.getElementById("txt").value;
+            localStorage.setItem("textvalue", firstname);
+            return false;
+        }
+    </script>
+</head>
+
+<body class="textbox">
+    <form action="index.html" class="login2">
+        <h3>Marquee Text</h3>
+        <textarea type="text" id="txt"></textarea>
+        <input type="submit" value="save" class="submitbtn" onclick="passvalues();"/>
+    </form>
+
+</body>
+
+</html>

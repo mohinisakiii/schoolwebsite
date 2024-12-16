@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bwd.css">
+</head>
+
+<body class="loginpage">
+
+    <form class="login1">
+        <div class="border">
+            <h3>Login Here</h3>
+            <div class="userid">
+                <label for="username" class="color">Username:-</label>
+                <input type="email" placeholder="Email or Phone" id="email">
+            </div>
+
+            <div class="userid">
+                <label for="password" class="color">Password:-</label>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <button type="submit" class="submitbtn" onclick="auth()">Log In</button>
+        </div>
+    </form>
+
+    <script>
+        function auth() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            //condition
+            if (email == 'admission@thegvmschool.in' && password == 'thegvmschool') {
+                window.location.assign('marquee.html');
+                alert("login successfully");
+            }
+            else {
+                alert("invalid information");
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>
