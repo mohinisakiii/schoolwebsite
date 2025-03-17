@@ -274,7 +274,9 @@ body {
     z-index: 1;
     /* Ensure it sits above the background image but below the title */
 }
-
+.presidentpic{
+    height: 350px;
+}
 .hero-button {
     position: absolute;
     /* Position it relative to the hero section */
@@ -657,7 +659,7 @@ margin-left: 360px;
     /* Gradient text effect */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     /* Soft shadow */
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     letter-spacing: 1.5px;
     /* Wider letter-spacing for a bold statement */
 }
@@ -667,8 +669,8 @@ margin-left: 360px;
 
     list-style: none;
     /* Remove default bullets */
-    text-align: left;
-    max-width: 1400px;
+    text-align: center;
+    max-width: 1500px;
     margin: 0 auto;
     padding-left: 0;
     font-size: 18px;
@@ -687,7 +689,7 @@ margin-left: 360px;
     color: #264653;
     transition: transform 0.3s ease, color 0.3s ease;
     font-weight: 500;
-    margin-left: 150px;
+    margin-left: 190px;
 }
 
 /* Icon styling with vibrant color */
@@ -697,6 +699,20 @@ margin-left: 360px;
     margin-right: 15px;
     font-size: 24px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.bold-text {
+    font-weight: bold;
+    display: inline-block; /* Ensures it stays in one line */
+    white-space: nowrap; /* Prevents wrapping */
+    margin-right: 5px; /* Space between bold text and description */
+}
+
+/* Bold text styling */
+.bold-text {
+    font-weight: bold;
+    display: inline-block; /* Ensures it stays in one line */
+    white-space: nowrap; /* Prevents wrapping */
+    margin-right: 5px; /* Space between bold text and description */
 }
 
 /* Hover effect for list items */
@@ -925,9 +941,9 @@ margin-left: 360px;
 
 /* Image Styling */
 .values-image img {
-    width: 80%;
+    width: 70%;
     /* Responsive image */
-    height: auto;
+    height: 350px;
     /* Maintain aspect ratio */
     border-radius: 10px;
     margin-top: 110px;
@@ -1325,6 +1341,69 @@ margin-left: 360px;
 .vision-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.activity-card {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.activityimg {
+    
+    border-radius: 10px;
+    
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+
+}
+
+.activityimg img {
+    padding-left: 40px;
+width: 400px;
+height: 300px;
+}
+
+.activityimg p {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.activityimg b {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
+
+}
+
+.activityimg p span {
+    color: rgb(209, 146, 146);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.activitypara {
+    padding-left: 40px;
+
+}
+
+.activitypara p {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.activitypara b {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555;
 }
 
 .curriculum {
@@ -2095,58 +2174,50 @@ textarea:focus {
         letter-spacing: 1.5px;
         /* Wider letter-spacing for a bold statement */
     }
-
-    /* Styling the reasons list */
     .reasons-list {
-
         list-style: none;
-        /* Remove default bullets */
-        text-align: left;
-        max-width: 400px;
+        max-width: 700px;
         margin: 0 auto;
-        padding-left: 0;
-        font-size: 10px;
-        line-height: 1.2;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
         color: #264653;
-        /* Rich darker teal */
-        transition: all 0.3s ease-in-out;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
-    /* Each list item */
+    
+    /* List items alignment */
     .reasons-list li {
-        margin-bottom: 20px;
         display: flex;
-        align-items: center;
-        color: #264653;
-        transition: transform 0.3s ease, color 0.3s ease;
-        font-weight: 500;
-        margin-left: 0px;
+        align-items: flex-start; 
+        gap: 10px; /* Space between icon and text */
+        margin-bottom: 15px;
+        margin-left: 20px; /* Reduce left margin */
     }
-
-    /* Icon styling with vibrant color */
+    
+    /* Checkmark icon */
     .reasons-list li i {
         color: #e63946;
-        /* Bright red for a strong visual */
-        margin-right: 15px;
-        font-size: 24px;
-        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        font-size: 20px;
+        margin-top: 3px; /* Align icon with text */
+        min-width: 25px; /* Ensures consistent spacing */
     }
-
-    /* Hover effect for list items */
-    .reasons-list li:hover {
-        color: #1d3557;
-        /* Dark blue on hover */
-        transform: translateX(10px);
-        /* Subtle right shift */
+    
+    /* Bold text styling */
+    .bold-text {
+        font-weight: bold;
+        display: inline-block; /* Ensures it stays in one line */
+        white-space: nowrap; /* Prevents wrapping */
+        margin-right: 5px; /* Space between bold text and description */
     }
-
-    .reasons-list li:hover i {
-        color: #457b9d;
-        /* Color shift for the icon on hover */
-        transform: rotate(10deg);
-        /* Slight rotation for playful effect */
+    
+    /* Bold text styling */
+    .bold-text {
+        font-weight: bold;
+        display: inline-block; /* Ensures it stays in one line */
+        white-space: nowrap; /* Prevents wrapping */
+        margin-right: 5px; /* Space between bold text and description */
     }
+    
 
     /* Responsive styling for smaller screens */
     .programs-offered {
@@ -2218,7 +2289,10 @@ textarea:focus {
         /* Dark teal for titles */
         margin-bottom: 5px;
     }
-
+    .presidentpic{
+        height: 550px;
+        
+    }
     /* Program descriptions */
     .program p {
         margin-left: 10px;
@@ -2429,10 +2503,10 @@ textarea:focus {
 
     /* Image Styling */
     .values-image img {
-        width: 100%;
+        width: 70%;
         
         /* Responsive image */
-        height: auto;
+        height: 200px;
         /* Maintain aspect ratio */
         border-radius: 10px;
         /* Rounded corners */
@@ -2878,7 +2952,115 @@ textarea:focus {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: black;
     }
-   
+     .curriculum {
+        width: 100%;
+        padding-left: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding-right: 10px;
+    }
+
+    .curriculumimg {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-right: 0px;
+
+    }
+
+    .curriculumimg img {
+        padding-left: 70px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .curriculumimg p {
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 12px;
+    }
+
+    .curriculumimg b {
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+
+    }
+
+    .curriculumimg p span {
+        color: rgb(209, 146, 146);
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .curriculumpara {
+        padding-left: 0px;
+
+    }
+
+    .curriculumpara p {
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 12px;
+    }
+
+    .curriculumpara b {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+    }
+    .activity-card {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        transition: transform 0.3s, box-shadow 0.3s;
+        gap: 0px;
+        padding-right: 10px;
+    }
+.activityimg{
+    display: flex;
+    flex-direction: column;
+}
+    .activity-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+    }
+
+    .span1 {
+        color: #034c9a;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .activty-card p {
+        font-size: 12px;
+        color: #555;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .activity-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+.activityimg p {
+padding-left: 15px;
+width: 100%;
+}
+.activitypara{
+    padding-left: 15px;
+    width: 100%;  
+}
 }
 @media (max-width: 360px){
     .hero-title {
