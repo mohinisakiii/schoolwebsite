@@ -3062,7 +3062,7 @@ width: 100%;
     width: 100%;  
 }
 }
-@media (max-width: 391px){
+@media (max-width: 450px){
     .hero-title {
         border-radius: 35px;
         position: relative;
