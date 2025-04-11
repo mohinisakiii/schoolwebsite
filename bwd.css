@@ -1432,7 +1432,7 @@ height: 200px;
 .curriculumimg p {
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: #555;
     font-size: 1.2rem;
 }
 
@@ -1458,7 +1458,7 @@ height: 200px;
 .curriculumpara p {
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: #555;
     font-size: 1.2rem;
 }
 
@@ -2918,7 +2918,7 @@ textarea:focus {
     .curriculumimg p {
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
+        color: #555;
         font-size: 12px;
     }
 
@@ -2944,7 +2944,7 @@ textarea:focus {
     .curriculumpara p {
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
+        color: #555;
         font-size: 12px;
     }
 
@@ -2979,7 +2979,7 @@ textarea:focus {
     .curriculumimg p {
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
+        color: #555;
         font-size: 12px;
     }
 
@@ -3005,7 +3005,7 @@ textarea:focus {
     .curriculumpara p {
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: black;
+        color: #555;
         font-size: 12px;
     }
 
@@ -3062,7 +3062,7 @@ width: 100%;
     width: 100%;  
 }
 }
-@media (max-width: 360px){
+@media (max-width: 391px){
     .hero-title {
         border-radius: 35px;
         position: relative;
@@ -3083,7 +3083,7 @@ width: 100%;
         /* Position it relative to the hero section */
         top: 62%;
         /* Adjust this value to position the button below the title */
-        left: 40.5%;
+        left: 37.5%;
         /* Center horizontally */
 
         /* Offset to center */
@@ -3110,6 +3110,20 @@ width: 100%;
         font-size: 30px;
     padding-right: 25px;
     }
+    .reasons-list li i {
+        display: none;
+    }
+    .bold-text{
+        margin-left: 25%;
+    }
+    .reasons-list li {
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start; 
+        gap: 10px; /* Space between icon and text */
+        margin-bottom: 15px;
+        margin-left: 20px; /* Reduce left margin */
+    }
     .strip {
         background-color: rgba(255, 255, 255, 0.9);
         /* Light transparent background */
@@ -3134,6 +3148,15 @@ width: 100%;
         margin-bottom: 5px;
         /* Center the strips */
     }
+    .values-image img {
+        width: 70%;
+        /* Responsive image */
+        height: 150px;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+        margin-top: 70px;
+        /* Rounded corners */
+    }
     .values-heading {
         font-size: 20px;
         /* Heading size */
@@ -3148,6 +3171,14 @@ width: 100%;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
         /* Shaded effect */
     }
-    
+    .activitypara p {
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #555;
+        font-size: 12px;
+    }
+    .activityimg p {
+        font-size: 12px;
+    }
 }
 /* Hamburger Icon Hidden on Desktop */
