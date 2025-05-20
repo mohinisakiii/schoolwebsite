@@ -3026,10 +3026,10 @@ textarea:focus {
         gap: 0px;
         padding-right: 10px;
     }
-.activityimg{
+    .activityimg{
     display: flex;
     flex-direction: column;
-}
+    }
     .activity-card img {
         width: 100%;
         border-radius: 10px;
@@ -3053,14 +3053,14 @@ textarea:focus {
         transform: scale(1.05);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
-.activityimg p {
-padding-left: 15px;
-width: 100%;
-}
-.activitypara{
+    .activityimg p {
+    padding-left: 15px;
+    width: 100%;
+    }
+    .activitypara{
     padding-left: 15px;
     width: 100%;  
-}
+    }
 }
 @media (max-width: 500px){
     .hero-title {
