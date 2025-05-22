@@ -40,4 +40,21 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.classList.toggle("show");
     });
 });
+const image = document.querySelectorAll('.gallery-container img');
+    let current = 0;
 
+    function showImage(index) {
+      image.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    }
+
+    function prevImage() {
+      current = (current - 1 + image.length) % image.length;
+      showImage(current);
+    }
+
+    function nextImage() {
+      current = (current + 1) % image.length;
+      showImage(current);
+    }

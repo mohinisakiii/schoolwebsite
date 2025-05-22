@@ -591,6 +591,73 @@ margin-left: 360px;
         /* Center text on smaller screens */
     }
 }
+.values-heading1 {
+    font-size: 36px;
+    /* Heading size */
+    font-family: 'Poppins', sans-serif;
+    color: #521155;
+    /* Dark color for text */
+    text-align: center;
+   
+    margin-top: 25px;
+    margin-bottom: -40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    /* Shaded effect */
+}
+.gallery-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .gallery-container {
+      position: relative;
+      height: 400px; /* you can change this to match your preferred image height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .gallery-container img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none;
+      object-fit: contain;
+    }
+
+    .gallery-container img.active {
+      display: block;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .arrow:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .arrow-left {
+      left: 10px;
+    }
+
+    .arrow-right {
+      right: 10px;
+    }
 
 /* Enhanced Styling for Why Choose GVM Section */
 .why-choose-gvm {
@@ -968,6 +1035,7 @@ margin-left: 360px;
         text-align: center;
         /* Center heading on small screens */
     }
+
 }
 
 /* Footer Styles */
@@ -2103,7 +2171,8 @@ textarea:focus {
         animation: wobble 6s infinite ease-in-out;
         /* Adds a slime wobble effect */
     }
-
+    .gallery-section {
+      max-width: 700px;}
     .why-choose-gvm {
         padding: 20px 20px;
         /* Extra padding for spacious layout */
@@ -2408,6 +2477,19 @@ textarea:focus {
         /* Shaded text effect */
         z-index: 1;
         /* Ensure heading stays on top of the background */
+    }
+    .values-heading1 {
+        font-size: 15px;
+        
+        /* Heading size */
+        font-family: 'Poppins', sans-serif;
+        color:#521155 ;
+        /* Dark color for text */
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: -30px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        /* Shaded effect */
     }
 
     /* Our Values Section */
@@ -3171,6 +3253,20 @@ textarea:focus {
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
         /* Shaded effect */
     }
+    .values-heading1 {
+        font-size: 20px;
+        /* Heading size */
+        font-family: 'Poppins', sans-serif;
+        color: #521155;
+        /* Dark color for text */
+        text-align: center;
+        
+        
+        margin-top: 20px;
+        margin-bottom: -30px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        /* Shaded effect */
+    }
     .activitypara p {
 
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -3180,5 +3276,7 @@ textarea:focus {
     .activityimg p {
         font-size: 12px;
     }
+    .gallery-section {
+      max-width: 400px;}
 }
 /* Hamburger Icon Hidden on Desktop */
