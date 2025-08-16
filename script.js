@@ -41,20 +41,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 const image = document.querySelectorAll('.gallery-container img');
-    let current = 0;
+let current = 0;
+let slideInterval = setInterval(nextImage, 3000); // Auto-slide every 5 seconds
 
-    function showImage(index) {
-      image.forEach((img, i) => {
+function showImage(index) {
+    image.forEach((img, i) => {
         img.classList.toggle('active', i === index);
-      });
-    }
+    });
+}
 
-    function prevImage() {
-      current = (current - 1 + image.length) % image.length;
-      showImage(current);
-    }
+function nextImage() {
+    current = (current + 1) % image.length;
+    showImage(current);
+}
 
-    function nextImage() {
-      current = (current + 1) % image.length;
-      showImage(current);
-    }
+function prevImage() {
+    current = (current - 1 + image.length) % image.length;
+    showImage(current);
+}
+
+function resetTimer() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextImage, 3000);
+}
+
+// Reset timer when user clicks navigation arrows
+document.querySelector('.arrow-left').addEventListener('click', () => {
+    prevImage();
+    resetTimer();
+});
+
+document.querySelector('.arrow-right').addEventListener('click', () => {
+    nextImage();
+    resetTimer();
+});
